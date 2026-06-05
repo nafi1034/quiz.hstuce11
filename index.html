@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Brainiac Quiz</h1>
+            <p>Test your knowledge! You have 15 seconds per question.</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <span id="progress-text">Question 1 of 4</span>
+                    <div class="progress-bar"><div id="progress-fill"></div></div>
+                </div>
+                <div class="timer">⏱️ <span id="time-left">15</span>s</div>
+            </div>
+
+            <h2 id="question-text">Question text goes here?</h2>
+
+            <div id="options-container" class="options-grid">
+                <!-- Options will be injected by JavaScript -->
+            </div>
+
+            <button id="next-btn" class="btn hidden">Next Question</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <h2>Quiz Completed!</h2>
+            <div class="score-circle">
+                <span id="final-score">0</span>
+                <small>Score</small>
+            </div>
+            <p id="score-feedback">Great job!</p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
